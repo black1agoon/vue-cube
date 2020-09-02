@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-    <cube-scroll-nav-bar :current="current" :labels="labels" @change="changeHandler" />
+<!--    <cube-scroll-nav-bar :current="current" :labels="labels" @change="changeHandler" />-->
     <router-view/>
   </div>
 </template>
 <script>
   export default {
-    name: 'application-store',
+    name: 'app',
     components: {
     },
     data() {
@@ -47,10 +47,7 @@
 </script>
 <style lang="stylus">
 #app
-  font-family Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing antialiased
-  -moz-osx-font-smoothing grayscale
-  text-align center
-  color #2c3e50
-  margin-top 60px
+  position: absolute
+  width: 100%
+  height: 100%
 </style>
